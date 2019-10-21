@@ -1,2 +1,3 @@
-# linux_tutoiral
-A tutorial of Linux  for everyday work
+linux公众号
+======
+* 基本命令
