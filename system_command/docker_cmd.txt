@@ -1,0 +1,51 @@
+系统安装中文语言
+yum -y group install chinese-support
+
+export LANG="zh_CN.UTF-8"
+source /etc/profile
+echo $LANG
+
+centos系统下安装mongodb安装
+https://blog.csdn.net/liang_henry/article/details/79582766
+在根目录下创建文件/data/db
+
+指定服务器上的GPUO
+export CUDA_VISIBLE_DEVICES=2
+
+
+dockerfile
+>>>docker build -t zf .
+
+重新启动
+source /etc/profile
+source ~/.bashrc
+
+启动mongo
+>>>　service mongod stop
+>>> /etc/init.d/mongod start
+>>> mongo
+
+hadoop集群配置
+https://www.cnblogs.com/felixzh/p/4992178.html
+
+docker-machine
+>>> eval "$(ssh-agent -s)"
+>>> ssh-add
+>>> docker-machine create -d generic --generic-ip-address=192.168.1.129 --generic-ssh-key ~/.ssh/id_rsa --generic-ssh-user=root vm
+
+docker swarm
+>>> docker swarm leave --force
+>>> docker swarm init --advertise-addr 10.170.67.157
+>>> 
+
+
+用户名:lthpc
+密码:Lt111111
+host:10.255.83.101
+
+>> ssh lthpc@10.255.83.101
+
+
+
+
+
