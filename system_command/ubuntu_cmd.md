@@ -1,20 +1,21 @@
+linux常用的命令
+==============
+
+``` python
 import warnings
 warnings.filterwarnings('ignore')
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] ="2"
 import matplotlib.pyplot as plt
 plt.switch_backend('agg')
-
+```
+````
 -i http://pypi.v2ex.com/simple
 -i http://mirrors.aliyun.com/pypi/simple
 -i https://pypi.tuna.tsinghua.edu.cn/simple
 -i https://pypi.mirrors.ustc.edu.cn/simple/
 
-os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
-
-组内服务器
-ssh -p 33200 camerart@gmshi.group
-密码:123456
+````
 
 升级nodejs和npm版本：
 ========
@@ -50,48 +51,46 @@ ubuntu状态栏显示:
  
 tensorflow:
 指定服务器上的GPUO
+```
 export CUDA_VISIBLE_DEVICES=2
-with tf.device('/device:XLA_GPU:0'):
-tf.Session(config=tf.ConfigProto(log_device_placement=True,allow_soft_placement=True))
-gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.9)
-with tf.Session(config=tf.ConfigProto(gpu_options=gpu_options)) as sess:
 
-StreamExecutor device (0): GeForce GTX 1080 Ti, Compute Capability 6.1
-StreamExecutor device (1): Quadro K620, Compute Capability 5.0
-StreamExecutor device (2): Tesla K40c, Compute Capability 3.5
-
+```
 
 tmux kill-session -t 0
 
 jupyter notebook
-生成gif图片
-convert -resize 768x576 -delay 20 -loop 0 *.jpg myimage.gif
+-------------
+* 生成gif图片
+>>> convert -resize 768x576 -delay 20 -loop 0 *.jpg myimage.gif
 
-图片转化为pdf
-convert -compress Group4 linguistics_thesis_b_thresh.png output.pdf
+* 图片转化为pdf
+>>> convert -compress Group4 linguistics_thesis_b_thresh.png output.pdf
 
 播放音乐
-timidity *.mid  //http://blog.topspeedsnail.com/archives/10508
-play *.mp3
+------
+>>> timidity *.mid  //http://blog.topspeedsnail.com/archives/10508
+>>> play *.mp3
+
 显示图片
+-----
 eog *.gif or *.png
 
 
-Keras 
-Using GPU to speed training:
-THEANO_FLAGS=device=gpu0
-python yourcode.py
 
-2. import os
-os.environ["THEANO_FLAGS"]="device=cpu"
+```
 ps aux|grep a //a为程序名称
 conda info --envs //安装的环境
+
+```
+
 //查看程序是否有内存泄漏
 g++ main.cpp -o a
 valgrind --tool=memcheck --leak-check=yes ./zf "data" "m_data" 1
 
 
-//将ｒｍ
+
+```
+//将rm
 $ git clone https://github.com/lagerspetz/linux-stuff
 
 $ sudo mv linux-stuff/scripts/saferm.sh /bin
@@ -107,12 +106,19 @@ alias rm=saferm.sh
 $ source ~/.bashrc
 
 通过命令 ulimit -s 查看linux的默认栈空间大小，默认情况下 为2~10M
- ##安装deb
+```
+
+安装deb
+------
 dpkg -i <package.deb>
-##卸载deb
+卸载deb
+----
 dpkg -r <package>
+
 网易云音乐
+-----
 >>netease-cloud-music
+
 
 静态文件库的生成(.a):
 1.g++ -c zf.cpp  ##将zf.cpp和zf.h生成目标文件.o
