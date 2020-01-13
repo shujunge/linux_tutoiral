@@ -23,6 +23,10 @@ ubuntu安装doxygen和graphviz
 --------
 sudo apt install doxygen graphviz
 
+manim
+-------
+* 需要安装pycairo==1.11.0
+
 
 
 
