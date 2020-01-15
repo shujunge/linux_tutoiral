@@ -205,3 +205,29 @@ dmidecode -t bios
 uname -a 
 ```
 
+## 挂载磁盘
+如果磁盘没有文件系统
+```
+sudo fdisk -l
+mkfs.ext4 /dev/sdb1
+
+常见的文件格式有:
+ext4,nfs,exfat等等
+
+```
+## 命令行链接wifi
+* 查看可以使用的无线网络
+```
+nmcli dev wifi
+```
+* 连接无线网
+```
+nmcli dev wifi connect 'yourname' password 'your password'
+```
+
+
+
+
+
+
+
