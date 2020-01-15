@@ -1,0 +1,42 @@
+%%file
+
+%%file [-a] filename
+可选参数：[-a]，将内容追加到文件。
+
+!cat tmp.txt
+#查看文件内容
+
+%timeit
+对行语句（%timeit）或语句块（%%timeit）计算执行时间。
+行模式用法：
+%timeit [-n<N> -r<R> -p<P>] statement
+
+xeus-cling 允许用户获取标准库的函数和类的帮助。
+使用 ?std::vector 会简单显示来自 cppreference 网页上的帮助页面。
+
+
+markdown命令
+======
+markdown-> docx
+-----
+pandoc yourmarkdown.md -o yourmarkdown.docx
+
+
+jupyter lab命令
+======
+
+查看jupyter　kernel
+=====
+jupyter kernelspec list
+
+查看jupyter　lab插件
+=====
+jupyter labextension list
+
+安装jupyter　lab插件
+=====
+jupyter labextension install  @ijmbarr/jupyterlab_spellchecker
+
+
+
+
