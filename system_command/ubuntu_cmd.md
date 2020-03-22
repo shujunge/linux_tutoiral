@@ -374,5 +374,13 @@ find_package(OpenCV  REQUIRED)
 
 >>> cmake  -D CMAKE_INSTALL_PREFIX=/home/wzf/opencv_library -D WITH_NVCUVID=OFF -D BUILD_opencv_cudacodec=OFF -D ENABLE_CXX11=YES ..
 
+* git clone --recursive https://github.com/Microsoft/LightGBM 
+
+
+wget下载github的pdf
+=======
+github: https://github.com/firmianay/security-paper/blob/master/Compiler/Getting_Started_with_LLVM_Core_Libraries/Getting%20Started%20with%20LLVM%20Core%20Libraries.pdf
+>>> wget https://raw.githubusercontent.com/firmianay/security-paper/master/Compiler/Getting_Started_with_LLVM_Core_Libraries/Getting%20Started%20with%20LLVM%20Core%20Libraries.pdf
+
 
 
