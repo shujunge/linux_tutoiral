@@ -382,5 +382,11 @@ wget下载github的pdf
 github: https://github.com/firmianay/security-paper/blob/master/Compiler/Getting_Started_with_LLVM_Core_Libraries/Getting%20Started%20with%20LLVM%20Core%20Libraries.pdf
 >>> wget https://raw.githubusercontent.com/firmianay/security-paper/master/Compiler/Getting_Started_with_LLVM_Core_Libraries/Getting%20Started%20with%20LLVM%20Core%20Libraries.pdf
 
+ubuntu install pyaudio
+=====
+```
+sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
+pip install pyaudio
+```
 
 
