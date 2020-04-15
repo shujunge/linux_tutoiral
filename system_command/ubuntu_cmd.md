@@ -388,5 +388,20 @@ ubuntu install pyaudio
 sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
 pip install pyaudio
 ```
-
+jupyter 导出pdf显示中文
+=======
+在\documentclass{article}后面插入
+```
+\usepackage{fontspec, xunicode, xltxtra}
+\setmainfont{Microsoft YaHei}
+\usepackage{ctex}
+```
+```
+xelate your_tex.tex
+```
+安装不同的字体
+====
+>>> cp new_font.ttf /usr/share/fonts
+>>> cd /usr/share/fonts
+>>> sudo mkfontscale && sudo mkfontdir && fc-cache -fv
 
